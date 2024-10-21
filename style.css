@@ -276,6 +276,17 @@ nav ul li a:hover {
   gap: 18px;
   align-items: start;
   padding-right: 20px;
+  text-align: left;
+}
+
+@media (max-width: 1300px) {
+  .hero__top {
+    padding-right: 0;
+  }
+}
+
+.hero__left h2 {
+  text-align: left;
 }
 
 .hero__left h2 span {
@@ -293,11 +304,13 @@ nav ul li a:hover {
   color: var(--pink);
   font-family: "Raleway", sans-serif;
 }
-
+.hero__right {
+  position: relative;
+}
 .hero__flower {
   position: absolute;
   bottom: 144px;
-  right: 200px;
+  right: -207px;
   z-index: -10;
 }
 
@@ -458,6 +471,16 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   padding: 70px;
+}
+
+@media (max-width: 1300px) {
+  .despre__right {
+    padding: 30px;
+  }
+
+  .despre__top {
+    gap: 70px;
+  }
 }
 
 /* Programari section */
@@ -935,14 +958,21 @@ select {
     font-size: 16px;
   }
 
+  .hero__left h2 {
+    text-align: center;
+  }
+
   .hero__flower {
     transform: scale(0.5);
-    left: 0;
-    top: 0;
+    left: -140px;
+    top: 200px;
+    /* bottom: 300px; */
+    right: 0;
   }
 
   .hero__lady {
-    transform: scale(0.5);
+    transform: scale(0.43);
+    /* top: -200px; */
   }
 
   h2 {
@@ -1022,12 +1052,12 @@ select {
   }
 
   .despre__banner {
-    bottom: 60px;
+    bottom: 10px;
   }
 
   #programari {
     padding: 30px 24px;
-    margin-top: -30px;
+    margin-top: 30px;
   }
 
   .programari__right {
@@ -1156,5 +1186,48 @@ select {
   .footer__program {
     align-self: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .despre__left {
+    margin-top: -100px;
+  }
+
+  .hero__banner {
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .despre__top {
+    height: 900px;
+  }
+  .despre__left {
+    margin-top: -20px;
+    padding-top: 0;
+  }
+
+  .hero__banner {
+    z-index: 10000;
+    /* top: 20px; */
+  }
+
+  #programari {
+    margin-top: 70px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .despre__top {
+    height: 850px;
+  }
+  .despre__left {
+    padding-top: 0;
+  }
+
+  #despre {
+    height: 950px;
   }
 }
