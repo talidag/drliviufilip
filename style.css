@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --pink: #da4f7c;
+  --pink: #0360d9;
   --white: #ffffff;
   --black: #000000;
 }
@@ -209,6 +209,8 @@ header {
   align-items: start;
   justify-content: center;
   gap: 12px;
+  filter: invert(29%) sepia(46%) saturate(6065%) hue-rotate(207deg)
+    brightness(88%) contrast(98%);
 }
 
 .nav-logo {
@@ -222,8 +224,9 @@ nav ul {
 }
 
 .nav-signature {
-  height: 48px;
+  height: 68px;
 }
+
 nav ul li a {
   transition: color 0.4s ease-in-out 0s;
 }
@@ -239,6 +242,8 @@ nav ul li a:hover {
 
 #goToTop {
   display: none;
+  filter: invert(29%) sepia(46%) saturate(6065%) hue-rotate(207deg)
+    brightness(88%) contrast(98%);
 }
 
 #goToTop {
@@ -291,6 +296,8 @@ nav ul li a:hover {
 
 .hero__flower {
   position: absolute;
+  bottom: 144px;
+  right: 200px;
   z-index: -10;
 }
 
@@ -411,7 +418,7 @@ nav ul li a:hover {
 /* Despre section */
 
 #despre {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   position: relative;
   overflow: hidden;
 }
@@ -419,17 +426,24 @@ nav ul li a:hover {
 .despre__top {
   display: flex;
   position: relative;
+  align-items: start;
   gap: 132px;
   justify-content: center;
   margin: 0 auto;
+  height: 700px;
   max-width: 1440px;
 }
 
 .despre-vector {
   position: absolute;
   left: -50px;
-  bottom: -40px;
+  bottom: 40px;
   z-index: -20;
+}
+
+.despre__left {
+  padding-left: 80px;
+  padding-top: 130px;
 }
 
 .despre__banner {
@@ -554,6 +568,7 @@ select {
   margin-bottom: 200px;
   padding-top: 80px;
   overflow: hidden;
+  /* background-color: #e1eeff; */
 }
 
 .testimoniale__card {
@@ -646,6 +661,8 @@ select {
   top: 32px;
   right: 32px;
   cursor: pointer;
+  filter: invert(29%) sepia(46%) saturate(6065%) hue-rotate(207deg)
+    brightness(88%) contrast(98%);
 }
 
 .invisible {
@@ -686,11 +703,15 @@ select {
 
 .footer-logo {
   width: 50px;
+  filter: invert(29%) sepia(46%) saturate(6065%) hue-rotate(207deg)
+    brightness(88%) contrast(98%);
 }
 
 .footer-signature {
   width: 250px;
   margin-top: 18px;
+  filter: invert(23%) sepia(81%) saturate(5535%) hue-rotate(207deg)
+    brightness(95%) contrast(98%);
 }
 
 .footer__contact h4 {
@@ -765,8 +786,7 @@ select {
   align-items: center;
 }
 
-.nav-logo,
-.nav-signature {
+.nav-logo {
   max-height: 50px;
 }
 
@@ -853,6 +873,8 @@ select {
     background: none;
     border: none;
     cursor: pointer;
+    filter: invert(29%) sepia(46%) saturate(6065%) hue-rotate(207deg)
+      brightness(88%) contrast(98%);
   }
 
   /* Hero section */

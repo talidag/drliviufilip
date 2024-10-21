@@ -148,7 +148,7 @@ window.addEventListener("scroll", function () {
     goToTopEl.style.display = "none";
   }
 });
-
+closeMenu;
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 1100) {
     btnNavAdded.classList.remove("invisible");
