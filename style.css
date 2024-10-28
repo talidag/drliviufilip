@@ -965,7 +965,7 @@ select {
 
   .hero__flower {
     transform: scale(0.5);
-    left: -140px;
+    left: -120px;
     top: 200px;
     /* bottom: 300px; */
     right: 0;
@@ -1195,8 +1195,8 @@ select {
     margin-top: -100px;
   }
 
-  .hero__banner {
-    bottom: -15px;
+  .hero__right {
+    margin-top: -150px;
   }
 }
 
