@@ -216,3 +216,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Automatically write the year
+
+const year = document.querySelector(".footer__year");
+
+year.innerHTML = new Date().getFullYear();
